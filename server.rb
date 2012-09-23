@@ -2,20 +2,19 @@ require 'rubygems'
 require 'belphanior/servant/servant'
 require 'sinatra'
 
-# An empty example; this is the simplest server that can be created.
-
 # Must be called to install and configure default routing for
 # '/', '/config', and '/protocol'
 servant_init
 
 add_role_description(
                      {
+                       "url" => "http://belphanior.net/roles/time/v1",
                        "name" => "time",
                        "description" => "Retrieves current time.",
                        "commands" => [
                                       {
                                         "name" => "get time string",
-                                        "description" => 
+                                        "description" =>
                                         "Gets the current time as a string. ",
                                         "arguments" => [],
                                         "return" => "Current time string. " +
