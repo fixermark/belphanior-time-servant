@@ -1,3 +1,4 @@
+#!/usr/bin/ruby
 require 'rubygems'
 require 'belphanior/servant/servant'
 require 'sinatra'
