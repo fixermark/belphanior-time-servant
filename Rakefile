@@ -21,9 +21,7 @@ spec = Gem::Specification.new do |s|
   s.authors = ["Mark T. Tomczak"]
   s.email = %q{belphanior+time-servant@fixermark.com}
   s.summary = %q{Reports the current time on the machine running the servant.}
-  s.description = <<-EOF
-    Belphanior time servant reports the current time on the machine running it.
-  EOF
+  s.description = IO.read("README")
   s.homepage = "http://belphanior.net"
   s.executables << "belphanior_time_servant"
   s.licenses = ['http://www.apache.org/licenses/LICENSE-2.0.txt']
